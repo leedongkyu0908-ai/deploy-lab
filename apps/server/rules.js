@@ -1,6 +1,6 @@
 // M13: maxLength를 20으로. M17: minLength를 2로. 먼저 스펙을 읽으세요.
-export const RULES = Object.freeze({ minLength: 1, maxLength: 20 })
-export const RELEASE = '002-length-limit-20'
+export const RULES = Object.freeze({ minLength: 2, maxLength: 20 })
+export const RELEASE = '003-min-length-2'
 export function validate(body) {
   if (typeof body !== 'string') return { error: 'body는 문자열이어야 합니다' }
   const text = body.trim()
